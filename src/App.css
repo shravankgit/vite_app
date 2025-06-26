@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.navSection{
+  border:1px solid red;
+  background-color: black;
+  display:flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.navSection ul li{
+  display: inline-flex;
+  list-style: none;
+  margin: 20px;
+  font-size: 2rem;
+}
