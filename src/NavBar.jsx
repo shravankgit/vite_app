@@ -7,11 +7,11 @@ const NavBar = () => {
     return (
         <div className='navSection'>
             <ul>
-                <Link to="/abc">
+                <Link to="/signup">
                     <li>First page</li>
                 </Link>
 
-                <Link to="/xyz">
+                <Link to="/view">
                     <li>Second page</li>
                 </Link>
                 <li>Third page</li>

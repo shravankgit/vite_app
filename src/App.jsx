@@ -6,23 +6,30 @@ import FourthPage from './routing/FourthPage'
 import {Routes,Route} from 'react-router-dom'
 import './App.css'
 import NavBar from './NavBar'
+import Delhi from './container/Delhi'
 
 const App = () => {
+  const gift = "Apple"
+  
   return (
     <div>
       <NavBar/>
       
       <Routes>
-        <Route path='/abc' element = {<FirstPage/>}/>
-        <Route path='/xyz' element = {<SecondPage/>}/>
+        <Route path='/signup' element = {<FirstPage/>}/>
+        <Route path='/view' element = {<SecondPage/>}/>
         <Route path='/mmt' element = {<ThirdPage/>}/>
         <Route path='/ksk' element = {<FourthPage/>}/>
-        
       </Routes>
+      
+      <h1> Sending Gift to Bangalore</h1>
+      <Delhi gift={gift}/>
+      
       {/* <FirstPage/>
       <SecondPage/>
       <ThirdPage/>
       <FourthPage/> */}
+      
     </div>
   )
 }
