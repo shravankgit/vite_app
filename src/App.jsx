@@ -7,8 +7,10 @@ import {Routes,Route} from 'react-router-dom'
 import './App.css'
 import NavBar from './NavBar'
 import Delhi from './container/Delhi'
+import { GiftProvider } from './context/ExampleContext'
 
 const App = () => {
+  
   const gift = "Apple"
   
   return (
@@ -23,7 +25,10 @@ const App = () => {
       </Routes>
       
       <h1> Sending Gift to Bangalore</h1>
-      <Delhi gift={gift}/>
+      
+      <GiftProvider>
+        <Delhi/>
+      </GiftProvider>
       
       {/* <FirstPage/>
       <SecondPage/>

@@ -1,12 +1,18 @@
 import React from 'react'
 import Kolkata from './Kolkata'
 
-const Mumbai = ({gift}) => {
+import { useData } from '../context/ExampleContext'
+
+const Mumbai = ({ gift }) => {
+
+  const { surprise } = useData()
+
   return (
     <div>
-        Mumbai
-        <Kolkata gift = {gift}/>
-        
+      Mumbaiii component starting
+      <h2>My name is {surprise.captain} </h2>
+      <Kolkata gift={gift} />
+      <h6>Mumbaiii component ending</h6>
     </div>
   )
 }
